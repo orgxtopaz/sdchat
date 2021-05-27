@@ -134,13 +134,13 @@ socket.on("leaving", (data) => {
     
     if (data == name) {
    
- 
+  scrollToBottom();
     }
 
      else {
 
        //DISPLAY THE USER IS LEAVING THE CHATROOM
-        scrollToBottom();
+       
         $(".message__area").append (`<p class="text-center ontype">${data} Leave the Chat Room</p>`);
   
     }
